@@ -20,22 +20,22 @@ public enum ChessPiece {
 	private ChessPiece(int type, int color){
 		this.type = type;
 		this.color = color;
-		hasMoved = false;
+		this.hasMoved = false;
 	}
 	
 	public int getType(){
-		return type;
+		return this.type;
 	}
 	
 	public int getColor(){
-		return color;
+		return this.color;
 	}
 	
 	public boolean getHasMoved(){
-		return hasMoved;
+		return this.hasMoved;
 	}
 	
 	public void moved(){
-		hasMoved = true;
+		this.hasMoved = true;
 	}
 }
